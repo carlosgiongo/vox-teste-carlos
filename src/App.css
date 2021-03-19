@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'barlow-b';
+  src: local('barlow-b'), url(./assets/fonts/barlow-bold.ttf) format('ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 600px) {
+  div .icons-nav {
+    display: none;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  div .App-top {
+    background: url('./assets/img/banner-topo-768px.jpg') no-repeat center center;
+    background-size: auto auto auto auto;
+    height: 1000px; 
+    width: 100%;
+    color: #4f6534;
+    font-style: bold;
+    position: relative;
+    margin-top: -90px;
+  }
+
+  .App-top .app-title{
+    margin-top: 25%;
+    margin-left: 40px;
+    font-size: 40px;
+    position: absolute;
+  }
+
+  div .App-top .top-content h1{
+    font-size: 40px;
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 136px;
+  }
+
+  div .App-top .top-content p{
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    margin-top: 405px;
+  }
+
+  div .App-mid {
+    color: #4f6534;
+    border-color: #eca73f;
+    width: 415px;
+    height: 500px;
+    background-color: #eca73f;
+    position: absolute;
+    margin-top: -30px;
+  }
+
+  div .App-mid h1{
+    color: #4f6534;
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  div .App-mid .left{
+    color: #4f6534;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  div .App-mid .right{
+    color: #4f6534;
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  div .App-bot {
+    margin-top: 10px;
+    background: url('./assets/img/banner-rodape-768px.jpg') no-repeat center center;
+    background-size: auto;
+    height: 1500px; 
+    width: auto;
+  }
+
+  .App-bot h1{
+    display: none;
+  }
+
+  .App-bot .bot-formulario{
+    color: aliceblue;
+    margin-left: 10%;
+    margin-top: 540px;
+    position: absolute;
+  }
+
+  .App-bot .side-bot h2{
+    margin-top: 940px;
+    margin-left: 35%;
+    font-size: 40px;
+    color: aliceblue;
+    position: absolute;
+  }
+
+  .App-bot .side-bot .email{
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 1040px;
+  }
+
+  .App-bot .side-bot .tel{
+    font-size: 19px;
+    color: orange;
+    margin-top: 1000px;
+    margin-left: 35%;
+    position: absolute;
+  }
+
+  .App-bot .side-bot .endereco{
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: -20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 600px) {
+  div .menu {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+    /*Div de cima*/
+  div .App-top {
+    background: url('./assets/img/banner-topo-1920px.jpg') no-repeat center center;
+    margin-top: -100px;
+    background-size: 100% auto;;
+    height: 900px;
+    color: #4f6534;
+    font-style: bold;
   }
-}
+
+  .App-top .app-title{
+    margin-top: 8%;
+    margin-left: 25%;
+    float: left;
+  }
+
+  div .icones{
+    margin-right: 25%;
+    float: right;
+  }
+
+  div .App-top .top-content h1{
+    font-size: 40px;
+    margin-top: 22%;
+    margin-left: 50%;
+    position: absolute;
+    text-align: justify;
+  }
+
+  div .App-top .top-content p{
+    font-size: 16px;
+    margin-top: 34.3%;
+    margin-left: 50%;
+    position: absolute;
+    text-align: justify;
+  }
+
+  /*Div do centro*/
+  div .App-mid {
+    color: #4f6534;
+    border-color: #eca73f;
+    margin-top: -40px;
+    margin-left: -44px;
+    width: 1200px;
+    height: 300px;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    background-color: #eca73f;
+    border-radius: 50px;
+  }
+
+  div .App-mid h1{
+    color: #4f6534;
+    display: inline-block;
+    margin-left: 300px;
+  }
+
+  div .App-mid .left{
+    color: #4f6534;
+    display: inline-block;
+    margin-left: 300px;
+    font-size: 11px;
+  }
+
+  div .App-mid .right{
+    color: #4f6534;
+    display: inline-block;
+    margin-left: 740px;
+    font-size: 11px;
+    float: right;
+    margin-top: -135px;
+  }
+
+
+  /*Div do formulario*/
+  div .App-bot {
+    background: url('./assets/img/banner-rodape-1920px.jpg') no-repeat center center;
+    background-size: 100% auto;;
+    height: 600px;
+  }
+
+  .App-bot h1{
+    color: orange;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 3%;
+    position: absolute;
+  }
+
+  .App-bot .bot-formulario{
+    color: aliceblue;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 6%;
+  }
+
+  .App-bot .side-bot h2{
+    font-size: 40px;
+    margin-top: 15%;
+    margin-left: 58%;
+    position: absolute;
+    text-align: justify;
+    color: aliceblue;
+  }
+
+  .App-bot .side-bot .email{
+    font-size: 13px;
+    margin-top: 22.6%;
+    margin-left: 58.5%;
+    position: absolute;
+    color: aliceblue;
+  }
+
+  .App-bot .side-bot .tel{
+    font-size: 19px;
+    margin-top: 22.3%;
+    margin-left: 58%;
+    position: absolute;
+    color: orange;
+  }
+
+  .App-bot .side-bot .endereco{
+    font-size: 13px;
+    margin-top: 22.6%;
+    margin-left: 55.3%;
+    position: absolute;
+    color: aliceblue;
+  }
+
+  .App-bot .input{
+    color: orange;
+  }
+} 
+
