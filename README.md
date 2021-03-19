@@ -1,6 +1,6 @@
 # Vox teste
 
-Feito com react native. Para instalar as dependencias:
+Feito com react js. Para instalar as dependencias:
 
 ### `npm install`
 
